@@ -15,8 +15,58 @@
 
   </head>
   <body>    
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBBgZc1O807iQMPF0slEfK_sZNUoey7V8A",
+    authDomain: "javascript-test-a5761.firebaseapp.com",
+    databaseURL: "https://javascript-test-a5761.firebaseio.com",
+    projectId: "javascript-test-a5761",
+    storageBucket: "javascript-test-a5761.appspot.com",
+    messagingSenderId: "482773210934",
+    appId: "1:482773210934:web:53e810b0599d31d8618597",
+    measurementId: "G-1FWL4DSKFN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+   
+  function mojaFunkcija(){
+            _name = document.getElementById("name").value;
+            _email = document.getElementById("email").value;
+            _message = document.getElementById("message").value;
+            alert("tre");
+            var rootRef = firebase.database().ref();
+          var storesRef = rootRef.child('messages');
+          var newStoreRef = storesRef.push();
+          newStoreRef.set({
+                name:_name,
+                email:_email,
+                message:_message
+            },
+            function(error) {
+              //NOTE: this completion has a bug, I need to fix.
+              if (error) {
+                   console.log("Data could not be saved." + error);
+                  
+              } else {
+                 console.log("Data saved successfully.");
+                
+
+                   }
+                });
+           
+           
+        }
+</script>
     <!-- Hero section -->
-    <section id="infinite" class="text-white tm-font-big tm-parallax">
+    <section id="infi9nite" class="text-white tm-font-big tm-parallax">
       <!-- Navigation -->
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
         <div class="container">   
@@ -291,11 +341,11 @@
             </div>
             
             <div class="col-sm-12 col-md-6">
-              <form action="" method="get">
-                <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input" required />
-                <input id="email" name="email" type="email" placeholder="Your Email" class="tm-input" required />
+              <form  >
+                <input id="name" name="name"  type="text" placeholder="Your Name" class="tm-input" required />
+                <input id="email" name="email"  type="email" placeholder="Your Email" class="tm-input" required />
                 <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input" required></textarea>
-                <button type="submit" class="btn tm-btn-submit">Submit</button>
+                <button onclick="mojaFunkcija()" class="btn tm-btn-submit">Submit</button>
               </form>
             </div>
             
@@ -354,6 +404,8 @@
     <script src="js/jquery.singlePageNav.min.js"></script>     
     <script src="js/bootstrap.min.js"></script> 
     <script>
+
+       
 
       function getOffSet(){
         var _offset = 450;

@@ -1,12 +1,10 @@
-/*
 
-Tooplate 2117 Infinite Loop
-
-https://www.tooplate.com/view/2117-infinite-loop
-
-*/
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
+
+#gallery, #whatwedo{
+  background-color: rgb(27, 27, 27);
+}
 
 body {
 	font-family: "Raleway", sans-serif;
@@ -85,8 +83,8 @@ blockquote {
 }
 
 .tm-navbar.scroll {
-  background-color: white;
-  border-bottom: 1px solid #e9ecef;
+  background-color:rgb(27, 27, 27);
+  border-bottom: 1px solid rgb(27, 27, 27);;
 }
 
 .navbar-brand {
@@ -120,7 +118,7 @@ blockquote {
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
   color: #FFF;
-  background-color: #369;
+  background-color: rgb(34, 45, 56);
 }
 
 .navbar-toggler {
