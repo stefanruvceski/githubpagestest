@@ -12,6 +12,17 @@
 body {
   background-color: #3a3a3a;
   color: #bebebe;
+  
+}
+
+html {
+  overflow:   scroll;
+ 
+}
+::-webkit-scrollbar {
+    width: 0px;
+  
+    background: transparent; /* make scrollbar transparent */
 }
 
 h1,
@@ -137,7 +148,7 @@ a:hover {
 
 .title-s {
   font-weight: 600;
-  color: #1e1e1e;
+  color: #eeeaea;
   font-size: 1.1rem;
 }
 
@@ -148,6 +159,7 @@ a:hover {
 }
 
 .title-a {
+  color: white;
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -481,7 +493,7 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #0751a7;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
@@ -715,7 +727,7 @@ a:hover {
   transition: all 500ms ease;
   color: rgb(255, 255, 255);
   background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
+  box-shadow: 0 0 0 10px #19416e;
 }
 
 .service-box .service-ico {
@@ -770,6 +782,7 @@ a:hover {
 
 .work-box {
   margin-bottom: 3rem;
+  height: 350px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
