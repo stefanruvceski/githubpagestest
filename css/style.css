@@ -10,8 +10,8 @@
 ======================================*/
 
 body {
-  background-color: #f5f5f5;
-  color: #4e4e4e;
+  background-color: #3a3a3a;
+  color: #bebebe;
 }
 
 h1,
@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
+  color: #bebebe;
 }
 
 a {
@@ -154,7 +154,7 @@ a:hover {
 }
 
 .subtitle-a {
-  color: #4e4e4e;
+  color: #bebebe;
 }
 
 .line-mf {
@@ -193,7 +193,7 @@ a:hover {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: #fff;
+  background-color: rgb(34, 34, 34);
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -223,7 +223,7 @@ a:hover {
 .socials .ico-circle:hover {
   background-color: #0078ff;
   color: #fff;
-  box-shadow: 0 0 0 3px #cde1f8;
+  box-shadow: 0 0 0 3px #000913;
   transition: all 500ms ease;
 }
 
@@ -459,7 +459,7 @@ a:hover {
 }
 
 .navbar-b.navbar-trans .nav-link:before {
-  background-color: #fff;
+  background-color: #3a3a3a;
 }
 
 .navbar-b.navbar-trans .nav-link:hover {
@@ -475,7 +475,7 @@ a:hover {
 
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
-  background-color: #fff;
+  background-color: #3a3a3a;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -554,7 +554,7 @@ a:hover {
 
 .navbar-toggler span {
   display: block;
-  background-color: #fff;
+  background-color: #3a3a3a;
   height: 3px;
   width: 25px;
   margin-top: 4px;
@@ -705,7 +705,7 @@ a:hover {
 ======================================*/
 
 .service-box {
-  background-color: #fff;
+  background-color: rgb(34, 34, 34);
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
@@ -713,7 +713,7 @@ a:hover {
 
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
-  color: #fff;
+  color: rgb(255, 255, 255);
   background-color: #0078ff;
   box-shadow: 0 0 0 10px #cde1f8;
 }
